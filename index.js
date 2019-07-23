@@ -62,7 +62,7 @@ function createRock(x) {
   rock.style.left = `${x}px` ;//Make rock left position whatever is inputted into the function
 
   // Hmmm, why would we have used `var` here?
-  var top = 0;
+  var top = 200;
 
   rock.style.top = top; //start rock at the top
 
@@ -83,7 +83,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     rock.style.top = `${positionToInteger(rock.style.top)+2}px`;
+     rock.style.top = `${positionToInteger(rock.style.top)+2}px`; //move rock
     if(checkCollision(rock)) {
       endGame();
     }

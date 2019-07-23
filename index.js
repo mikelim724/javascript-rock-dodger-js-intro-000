@@ -62,7 +62,7 @@ function createRock(x) {
   rock.style.left = `${x}px` ;//Make rock left position whatever is inputted into the function
 
   // Hmmm, why would we have used `var` here?
-  var top = 200;
+  var top = 0;
 
   rock.style.top = top; //start rock at the top
 

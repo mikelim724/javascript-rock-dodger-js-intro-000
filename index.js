@@ -56,15 +56,15 @@ function checkCollision(rock) {
 }
 
 function createRock(x) {
-  const rock = document.createElement('div')
+  const rock = document.createElement('div');
 
-  rock.className = 'rock'
-  rock.style.left = `${x}px` //Make rock left position whatever is inputted into the function
+  rock.className = 'rock';
+  rock.style.left = `${x}px` ;//Make rock left position whatever is inputted into the function
 
   // Hmmm, why would we have used `var` here?
-  var top = 0
+  var top = 0;
 
-  rock.style.top = top //start rock at the top
+  rock.style.top = top; //start rock at the top
 
   /**
    * Now that we have a rock, we'll need to append

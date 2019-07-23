@@ -70,7 +70,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-
+  GAME.appendChild(rock); 
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -90,7 +90,9 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-
+    else if (positionToInteger(rock.style.top) > 360) {
+      
+    }
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM

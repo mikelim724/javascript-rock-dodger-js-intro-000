@@ -59,12 +59,12 @@ function createRock(x) {
   const rock = document.createElement('div')
 
   rock.className = 'rock'
-  rock.style.left = `${x}px`
+  rock.style.left = `${x}px` //Make rock left position whatever is inputted into the function
 
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = top
+  rock.style.top = top //start rock at the top
 
   /**
    * Now that we have a rock, we'll need to append
@@ -83,7 +83,9 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-
+    if(checkCollision(rock)) {
+      endGame();
+    }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.

@@ -91,7 +91,7 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-    else if (positionToInteger(rock.style.top) < 380) {
+    else if (positionToInteger(rock.style.top) < 380) { //380 bc rock is 20 height.
       window.requestAnimationFrame(moveRock);
     }
     /**
@@ -121,6 +121,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
+  ROCKS = [];
 }
 
 function moveDodger(e) {

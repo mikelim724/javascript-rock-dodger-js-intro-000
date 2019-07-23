@@ -123,7 +123,7 @@ function endGame() {
   clearInterval(gameInterval);
   ROCKS.foreach(function(el, index, array) {
     el.remove();
-  })
+  });
   document.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }

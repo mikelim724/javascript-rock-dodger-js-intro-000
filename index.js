@@ -157,8 +157,8 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    window.requestAnimationFrame(function(){
-     var leftposition = positionToInteger(DODGER.style.left);
-     if(leftposition > 0){
+     var leftposition = positionToInteger(DODGER.style.left); //convert left position into integer cordinate
+     if(leftposition > 0){ //Will only move left by 4 px until it hits the left edge of the game
        DODGER.style.left= `${leftposition-4}px`;
      }
    });
